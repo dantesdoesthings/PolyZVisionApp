@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Toolbar color -->
+    <color name="toolbar_color">#333333</color>
+
+    <!-- Colors related to sliders in fragment_color_options -->
+    <color name="seekbar_bg">#33333388</color>
+    <color name="thumb_red">#FFFF0000</color>
+    <color name="thumb_green">#FF00FF00</color>
+    <color name="thumb_blue">#FF0000FF</color>
+
+    <!--Color of buttons-->
+    <color name="button_text">#0094FF</color>
+    <color name="button_bg">#DDDDDD</color>
+
+    <!--Menu area BG -->
+    <color name="menu_bg">#BBBBBBBB</color>
+
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dantesdoesthings.polyzvision.OtherOptionsFragment"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:text="@string/label_point_switch"
+                android:layout_gravity="center"/>
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/option_toggle_points"
+                android:layout_gravity="center"
+                android:checked="true"
+                android:tag="@string/point_switch_tag"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:text="@string/label_option_buttons"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zoom_out2"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:id="@+id/options_button_minus"
+                android:layout_gravity="center"
+                android:tag="@string/options_minus_tag"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zoom_in2"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:id="@+id/options_button_plus"
+                android:layout_gravity="center"
+                android:tag="@string/options_plus_tag"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:checkedButton="@+id/option_radio_circle">
+            <RadioButton android:id="@+id/option_radio_polygon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_option_polygon"/>
+            <RadioButton android:id="@+id/option_radio_square"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_option_square"/>
+            <RadioButton android:id="@+id/option_radio_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_option_circle"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

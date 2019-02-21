@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dantesdoesthings.polyzvision.AdvancedOptionsFragment"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:text="@string/label_advanced_spiraling"
+                android:layout_gravity="center"/>
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggle_advanced_spiraling"
+                android:layout_gravity="center"
+                android:tag="@string/spiraling_toggle_tag"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/label_advanced_speed"
+                android:layout_gravity="center"/>
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:id="@+id/slider_advanced_speed"
+                android:max="180"
+                android:maxHeight="10dp"
+                android:minHeight="10dp"
+                android:progress="100"
+                android:progressDrawable="@color/seekbar_bg"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:tag="@string/speed_slider_tag"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/label_advanced_swirl"
+                android:layout_gravity="center"/>
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:id="@+id/slider_advanced_swirl"
+                android:max="63"
+                android:maxHeight="10dp"
+                android:minHeight="10dp"
+                android:progress="6"
+                android:progressDrawable="@color/seekbar_bg"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:tag="@string/swirl_slider_tag"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Method"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:checkedButton="@+id/advanced_radio_newton">
+            <RadioButton android:id="@+id/advanced_radio_newton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/newton_label"/>
+            <RadioButton android:id="@+id/advanced_radio_halley"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/halley_label"/>
+            <RadioButton android:id="@+id/advanced_radio_mrbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mrbf_label"/>
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

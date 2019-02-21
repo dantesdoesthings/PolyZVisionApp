@@ -1,0 +1,61 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <!--
+    <item
+        android:id="@+id/action_full_screen_exit"
+        android:title="@string/full_screen_exit"
+        android:icon="@drawable/ic_full_screen_exit"
+        android:orderInCategory="96"
+        android:visible="false"
+        app:showAsAction="always"/> -->
+    <item
+        android:id="@+id/action_full_screen"
+        android:title="@string/full_screen"
+        android:icon="@drawable/ic_full_screen"
+        android:orderInCategory="97"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_show_menu"
+        android:title="@string/show_menu"
+        android:icon="@drawable/ic_show_menu"
+        android:orderInCategory="98"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_hide_menu"
+        android:title="@string/hide_menu"
+        android:icon="@drawable/ic_hide_menu"
+        android:orderInCategory="99"
+        android:visible="false"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_sharpness"
+        android:title="@string/sharpness_name"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_colors"
+        android:title="@string/color_name"
+        android:orderInCategory="101"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_navigation"
+        android:title="@string/navigation_name"
+        android:orderInCategory="102"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_other_options"
+        android:title="@string/other_options_name"
+        android:orderInCategory="103"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_advanced"
+        android:title="@string/advanced_options_name"
+        android:orderInCategory="104"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/about_name"
+        android:orderInCategory="105"
+        app:showAsAction="never" />
+</menu>

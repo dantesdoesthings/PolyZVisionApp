@@ -1,0 +1,152 @@
+<resources>
+    <string name="app_name">Poly Z Vision</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Names of ActionBar buttons -->
+    <string name="sharpness_name">Sharpness</string>
+    <string name="color_name">Color</string>
+    <string name="navigation_name">Navigation</string>
+    <string name="other_options_name">Other Options</string>
+    <string name="advanced_options_name">Advanced</string>
+    <string name="about_name">About</string>
+    <string name="hide_menu">Hide Menu</string>
+    <string name="show_menu">Show Menu</string>
+    <string name="full_screen">Full Screen</string>
+    <string name="full_screen_exit">Exit Full Screen</string>
+
+    <!-- Names for RGB labels in fragment_color_options -->
+    <string name="label_red">Red</string>
+    <string name="label_green">Green</string>
+    <string name="label_blue">Blue</string>
+
+    <!-- List of possibilities to customize colors for. Feeds into color_spinner. -->
+    <string-array name="color_list">
+        <item>Common</item>
+        <item>Neutral</item>
+        <item>Color 1</item>
+        <item>Color 2</item>
+        <item>Color 3</item> <!--
+        <item>Color 4</item>
+        <item>Color 5</item>
+        <item>Color 6</item>
+        <item>Color 7</item>
+        <item>Color 8</item>
+        <item>Color 9</item>
+        <item>Color 10</item>
+        <item>Color 11</item>
+        <item>Color 12</item> -->
+    </string-array>
+
+    <!-- Prompt for the color_spinner in fragment_color_options -->
+    <string name="color_spinner_prompt">Change color</string>
+
+    <!-- Labels for sliders in fragment_sharpness_options -->
+    <string name="label_smoothness_sharpness">Color Smoothness</string>
+    <string name="label_sharpness">Sharpness</string>
+    <string name="label_dominance_sharpness">Color Dominance</string>
+
+    <!-- Shapes in options_fragment -->
+    <string-array name="options_shape_list">
+        <item>Polygon</item>
+        <item>Square</item>
+        <item>Circle</item>
+    </string-array>
+
+    <!-- Prompt for options_shape_spinner -->
+    <string name="options_shape_prompt">Shape</string>
+
+    <!-- Other labels in fragment_options -->
+    <string name="label_point_switch">Show Points</string>
+    <string name="label_option_buttons">Option</string>
+
+    <!-- "Options" buttons labels -->
+    <string name="options_plus">+</string>
+    <string name="options_minus">-</string>
+
+    <!-- "Navigation" buttons labels -->
+    <string name="nav_left"><![CDATA[<-]]></string>
+    <string name="nav_up">/\\</string>
+    <string name="nav_down">\\/</string>
+    <string name="nav_right"><![CDATA[->]]></string>
+    <string name="nav_memorize">Mem</string>
+    <string name="nav_recall">Rec</string>
+    <string name="nav_default">Def</string>
+    <string name="nav_zoom_in">+</string>
+    <string name="nav_zoom_out">-</string>
+
+    <!-- Methods in fragment_advanced_options -->
+    <string-array name="advanced_method_list">
+        <item>Newton</item>
+        <item>Halley</item>
+        <item>MRBF</item>
+    </string-array>
+    <!-- Alternates for above -->
+    <string name="newton_label">Newton</string>
+    <string name="halley_label">Halley</string>
+    <string name="mrbf_label">MRBF</string>
+
+    <!-- Prompt for advanced_method_spinner -->
+    <string name="advanced_method_prompt">Method</string>
+    <string name="label_advanced_spiraling">Spiraling</string>
+    <string name="label_advanced_speed">Speed</string>
+    <string name="label_advanced_swirl">Swirl</string>
+
+    <!-- All query buttons text -->
+    <string name="query">\?</string>
+
+    <!-- Memorize, Recall, and Default button names -->
+    <string name="button_memorize_short">M</string>
+    <string name="button_recall_short">R</string>
+    <string name="button_default_short">D</string>
+
+    <!-- All button "Tags" -->
+    <string name="red_slider_tag">Color Red</string>
+    <string name="blue_slider_tag">Color Blue</string>
+    <string name="green_slider_tag">Color Green</string>
+    <string name="color_spinner_tag">Color Spinner</string>
+    <string name="smoothness_slider_tag">Smoothness</string>
+    <string name="sharpness_slider_tag">Sharpness</string>
+    <string name="dominance_slider_tag">Dominance</string>
+    <string name="point_switch_tag">Show Points</string>
+    <string name="options_minus_tag">Options Minus</string>
+    <string name="options_plus_tag">Options Plus</string>
+    <string name="shape_spinner_tag">Shapes</string>
+    <string name="nav_left_tag">Left</string>
+    <string name="nav_up_tag">Up</string>
+    <string name="nav_down_tag">Down</string>
+    <string name="nav_right_tag">Right</string>
+    <string name="nav_zoom_in_tag">Zoom In</string>
+    <string name="nav_zoom_out_tag">Zoom Out</string>
+    <string name="nav_memorize_tag">Nav Memorize</string>
+    <string name="nav_recall_tag">Nav Recall</string>
+    <string name="nav_default_tag">Nav Default</string>
+    <string name="spiraling_toggle_tag">Advanced Spiraling</string>
+    <string name="speed_slider_tag">Advanced Speed</string>
+    <string name="swirl_slider_tag">Advanced Swirl</string>
+    <string name="advanced_method_spinner_tag">Advanced Method</string>
+    <string name="advanced_newton_tag">Newton</string>
+    <string name="advanced_halley_tag">Halley</string>
+    <string name="advanced_mrbf_tag">MRBF</string>
+
+
+    <string name="feedback_logger_initial_text">Do Something</string>
+
+    <!-- Navigation button symbols -->
+    <string name="left_arrow">&#x25c0;</string>
+    <string name="up_arrow">&#x25b2;</string>
+    <string name="down_arrow">&#x25bc;</string>
+    <string name="right_arrow">&#x25ba;</string>
+    <string name="default_menu_area_text">Choose an option area from the Action Bar.</string>
+    <string name="label_option_polygon">Polygon</string>
+    <string name="label_option_square">Square</string>
+    <string name="label_option_circle">Circle</string>
+
+    <!-- Credits -->
+    <string name="credits">Poly-Z-Vision brought to you by: \nMichael Baramidze (dantesdoesthings); \nBahman Kalantari \nFedor Andreev \n\nFor more information, visit <a href = "http://polynomiography.com">http://polynomiography.com</a></string>
+
+    <!-- Full screen warning -->
+    <string name="full_screen_popup">Fullscreen mode is temporary. Take a screenshot of your work!</string>
+
+
+</resources>

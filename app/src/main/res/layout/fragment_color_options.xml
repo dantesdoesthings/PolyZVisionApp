@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dantesdoesthings.polyzvision.ColorOptionsFragment"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight=".5"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:id="@+id/slider_red"
+                android:max="255"
+                android:maxHeight="10dp"
+                android:minHeight="10dp"
+                android:progress="255"
+                android:progressDrawable="@color/seekbar_bg"
+                android:thumbTint="@color/thumb_red"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:tag="@string/red_slider_tag"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/label_red"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:id="@+id/slider_green"
+                android:max="255"
+                android:maxHeight="10dp"
+                android:minHeight="10dp"
+                android:progress="0"
+                android:progressDrawable="@color/seekbar_bg"
+                android:thumbTint="@color/thumb_green"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:tag="@string/blue_slider_tag"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/label_green"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:id="@+id/slider_blue"
+                android:max="255"
+                android:maxHeight="10dp"
+                android:minHeight="10dp"
+                android:progress="0"
+                android:progressDrawable="@color/seekbar_bg"
+                android:thumbTint="@color/thumb_blue"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:tag="@string/green_slider_tag"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/label_blue"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_weight=".25"
+        android:layout_height="wrap_content"
+        android:id="@+id/advanced_method_spinner"
+        android:entries="@array/color_list"
+        android:prompt="@string/color_spinner_prompt"
+        android:tag="@string/color_spinner_tag"/>
+
+</LinearLayout>
